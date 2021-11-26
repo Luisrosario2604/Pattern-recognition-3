@@ -18,7 +18,12 @@ de compuestos diferentes.
 
 * Python 3.7+
 
-* APackage >= 2.0.0
+* matplotlib == 3.3.4
+* numpy == 1.21.3
+* pandas == 1.0.5
+* scikit_learn == 1.0.1
+* seaborn == 0.11.2
+
 
 How to install all the requirements :
 ```bash
