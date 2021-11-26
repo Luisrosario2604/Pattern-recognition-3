@@ -43,6 +43,7 @@ $ python main.py
     ├── reto3.pdf                       # Course
     │
     ├── Datasets                        # All the datasets
+    │   ├── reto3_Ypred.csv             # Result of the prediction dataset
     │   ├── reto3_testX.csv             # Test dataset (need to be solved)
     │   ├── reto3_trainX.csv            # Features dataset
     │   └── reto3_trainY.csv            # Labels dataset
