@@ -40,18 +40,21 @@ $ python main.py
 
     .
     ├── main.ipynb
-    ├── reto3.pdf                       # Course
+    ├── main.py
+    ├── reto3.pdf                                   # Course
     │
-    ├── Datasets                        # All the datasets
-    │   ├── reto3_Ypred.csv             # Result of the prediction dataset
-    │   ├── reto3_testX.csv             # Test dataset (need to be solved)
-    │   ├── reto3_trainX.csv            # Features dataset
-    │   └── reto3_trainY.csv            # Labels dataset
+    ├── Datasets                                    # All the datasets
+    │   ├── reto3_Ypred.csv                         # Result of the prediction dataset
+    │   ├── reto3_testX.csv                         # Test dataset (need to be solved)
+    │   ├── reto3_trainX.csv                        # Features dataset
+    │   └── reto3_trainY.csv                        # Labels dataset
     │
-    ├── Other methods tested (Bonus)    # Bonus documents
-    │   ├── other_methods.ipynb         # All methods tested
-    │   └── ...                         # Images, Graphs ...
+    ├── Other methods tested (Bonus)                # Bonus documents
+    │   ├── reto3_extra_methods_tested.ipynb        # All methods tested
+    │   └── reto3_extra_methods_tested.py
     │
+    ├── alumnos.txt
+    ├── requirements.txt
     ├── .gitignore
     └── README.md
 
