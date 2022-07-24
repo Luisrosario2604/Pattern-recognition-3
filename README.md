@@ -1,28 +1,35 @@
-# Reconocimiento_Reto_3
+# Pattern recognition (Part 3/4)
 
-## Goal
+#### 👨‍🎓 This project was carried out during my master's degree in computer vision at URJC - Madrid 
 
-El objetivo de esta práctica es construir un clasificador multiclase capaz de predecir correctamente
-hasta 7 tipos distintos de terrenos a partir de medidas tomadas con teledetección.
-Las medidas son: altitud, azimut, inclinación, DH_agua (distancia horizontal a una fuente de
-agua), DV_agua (distancia vertical a una fuente de agua), DH_camino (distancia horizontal a
-un camino), sombra_9am, sombra_12pm, sombra_3pm, DH_fuego (distancia horizontal a una
-fuente de fuego potencial), reserva_1, reserva_2, reserva_3, reserva_4, t1, t2, t3, t4, t5, t6, t7,
-t8, t9, t10, t11, t12, t13, t14, t15, t16, t17, t18, t19, t20, t21, t22, t23, t24, t25, t26, t27, t28,
-t29, t30, t31, t32, t33, t34, t35, t36, t37, t38, t39, t40.
-Las características reserva_1 a reserva_4 hacen referencia a si el terreno está en una reserva
-nativa americana. Las características t1 a t40 indican la presencia en el terreno de hasta 40 tipos
-de compuestos diferentes.
+The objective of this exercise is to build a multi-class classifier capable of correctly predicting 7 different types of terrain.
+
+The measures are: altitude, azimuth, slope, DH_water (horizontal distance to a water source),
+DV_water (vertical distance to a water source), DH_road (horizontal distance to a road),
+shade_9am, shade_12pm, shade_3pm, DH_fire (horizontal distance to a potential fire source),
+reserve_1, reserve_2, reserve_3, reserve_4, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t11,
+t12, t13, t14, t15, t16, t17, t18, t19, t20, t21, t22, t23, t24, t25, t26, t27, t28, t29, t30,
+t31, t32, t33, t34, t35, t36, t37, t38, t39, t40. Characteristics reservation_1 to reservation_4
+refer to whether the land is on a Native American reservation. Native American reservation.
+Characteristics t1 to t40 indicate the presence of up to 40 different types of compounds on the site. of different compounds.
+
+## Goals
+
+- Construct a multi-class classifier with 50+ features.
+- Have model score (accuracy) >= 0.8
 
 ## Requirements
 
 * Python 3.7+
+* Jupyter notebook
+
 
 * matplotlib == 3.3.4
 * numpy == 1.21.3
 * pandas == 1.0.5
-* scikit_learn == 1.0.1
+* scikit_learn == 1.1.1
 * seaborn == 0.11.2
+
 
 
 How to install all the requirements :
@@ -32,33 +39,50 @@ $ pip install -r requirements.txt
 
 ## Usage
 
+Execute only from project directory
 ```bash
-$ python main.py
+$ jupyter notebook src/main.ipynb
 ```
 
 ## Structure
 
+
     .
-    ├── main.ipynb
-    ├── main.py
-    ├── reto3.pdf                                   # Course
-    │
-    ├── Datasets                                    # All the datasets
-    │   ├── reto3_Ypred.csv                         # Result of the prediction dataset
-    │   ├── reto3_testX.csv                         # Test dataset (need to be solved)
-    │   ├── reto3_trainX.csv                        # Features dataset
-    │   └── reto3_trainY.csv                        # Labels dataset
-    │
-    ├── Other methods tested (Bonus)                # Bonus documents
-    │   ├── reto3_extra_methods_tested.ipynb        # All methods tested
-    │   └── reto3_extra_methods_tested.py
-    │
-    ├── alumnos.txt
+    ├── datasets
+    │        ├── reto3_testX.csv
+    │        ├── reto3_trainX.csv
+    │        └── reto3_trainY.csv
+    ├── imgs
+    │        ├── Figure_1.png
+    │        ├── Figure_2.png
+    │        └── Figure_3.png
+    ├── model
+    │        └── Model_24-07-22:39:36.sav
+    ├── predictions
+    │        └── reto3_Ypred.csv
+    ├── README.md
     ├── requirements.txt
-    ├── .gitignore
-    └── README.md
+    ├── Reto3_2021.pdf
+    └── src
+        ├── bonus_extra_methods_tested.ipynb
+        └── main.ipynb
+
+
+## Examples
+
+Example of the features given
+
+![Features](./imgs/Figure_1.png)
+
+PCA examples for one feature (tipo de bosque)
+
+![PCA example](./imgs/Figure_2.png)
+
+This is the result of the model (score = 0.9354)
+
+![MNIST](./imgs/Figure_3.png)
 
 ## Authors
 
-* **GILABERT MAÑO, VICENTE** - *Member 1* - [Vicent](https://github.com/vgilabert94)
-* **Luis Rosario** - *Member 2* - [Luisrosario2604](https://github.com/Luisrosario2604)
+* **Luis Rosario** - *Member 1* - [Luisrosario2604](https://github.com/Luisrosario2604)
+* **Vicent Gilabert Maño** - *Member 2* - [Vicent](https://github.com/vgilabert94)
