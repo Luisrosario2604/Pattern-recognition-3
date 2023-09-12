@@ -20,32 +20,31 @@ Characteristics t1 to t40 indicate the presence of up to 40 different types of c
 
 ## Requirements
 
-* Python 3.7+
+* Python 3.9+
 * Jupyter notebook
 
-
-* matplotlib == 3.3.4
-* numpy == 1.21.3
-* pandas == 1.0.5
-* scikit_learn == 1.1.1
-* seaborn == 0.11.2
-
-
+* jupyter~=1.0.0
+* matplotlib ~= 3.3.4
+* numpy ~= 1.21.3
+* pandas ~= 1.4.2
+* scikit_learn ~= 1.1.1
+* seaborn ~= 0.11.2
 
 How to install all the requirements :
+
 ```bash
-$ pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Usage
 
 Execute only from project directory
+
 ```bash
-$ jupyter notebook src/main.ipynb
+jupyter notebook src/main.ipynb
 ```
 
 ## Structure
-
 
     .
     ├── datasets
@@ -66,7 +65,6 @@ $ jupyter notebook src/main.ipynb
     └── src
         ├── bonus_extra_methods_tested.ipynb
         └── main.ipynb
-
 
 ## Examples
 
