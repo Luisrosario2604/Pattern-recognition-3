@@ -21,7 +21,7 @@ Characteristics t1 to t40 indicate the presence of up to 40 different types of c
 ## Requirements
 
 * Python 3.9+
-* Jupyter notebook
+
 
 * jupyter~=1.0.0
 * matplotlib ~= 3.3.4
